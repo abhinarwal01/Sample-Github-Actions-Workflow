@@ -1,0 +1,14 @@
+name: "Multi Event Pipeline / Workflow"  #Name of pipeline
+
+on:
+  push:   #Event: Whenever a push is made to the respository on the main branch
+    branches:
+      - test
+      
+
+jobs: 
+  on-push:   #Job name
+    runs-on: ubuntu-latest
+    steps:  #Steps to be executed in the job.
+      - name: "Running a main push"   # Step 1
+        run: echo "Running a main push"
