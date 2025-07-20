@@ -5,9 +5,11 @@ on:
         branches:
             - main
             - test
+            - newtest
     pull_request:   #Event whenever a pull request is made to the repo.
         branches:
             - main
+            - newtest
         types:    #Another sub-event to define type
             - closed      
     workflow_dispatch: # Gives us manual control to run workflow from github.com
