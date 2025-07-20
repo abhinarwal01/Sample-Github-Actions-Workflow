@@ -4,6 +4,7 @@ on:
   push:   #Event: Whenever a push is made to the respository on the main branch
     branches:
       - test
+      - main
       
 
 jobs: 
